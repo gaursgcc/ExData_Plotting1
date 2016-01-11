@@ -30,7 +30,7 @@ axis(1,at=a:a,labels=c("Sat"))
 
 # Plot Voltage against Weekdays only with label and without x-axes in no pasting mode
 
-plot(eda_hw_1$Voltage,eda_hw_1$weekdays,type="n",ylab= "Global Active Power(kilowatts)",xlab="datetime",xaxt="n")
+plot(eda_hw_1$Voltage,eda_hw_1$weekdays,type="n",ylab= "Voltage",xlab="datetime",xaxt="n")
 
 # Add the line graph of Voltage
 
