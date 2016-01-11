@@ -22,14 +22,15 @@ eda_hw_1$Date <- as.Date(eda_hw_1$Date, "%d/%m/%Y")
 
 eda_hw_1$weekday <- weekdays(as.Date(eda_hw_1$Date))
 
+# Set up png file to avoid printing problems later
+
+png(filename="plot1.png",width=480,height=480,units="px")
+
+
 # Plotting Histogram
 
 plot.new()
 
 hist(eda_hw_1$Global_active_power,col="red",xlab="Global Active Power(kilowatts)",ylim=c(0,1200),main="Global Active Power")
-
-# Copying to png file
-
-dev.copy(png,"plot1.png")
 
 dev.off()

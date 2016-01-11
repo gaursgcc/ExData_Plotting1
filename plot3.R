@@ -4,6 +4,8 @@
 
 png(filename="plot3.png",width=480,height=480,units="px")
 
+plot.new()
+
 # Plot Sub_Metering_1 against Weekdays only with label and without x-axes in no pasting mode
 
 plot(eda_hw_1$Sub_metering_1,eda_hw_1$weekdays,type="n",ylab= "Energy sub metering",xlab="",xaxt="n")
